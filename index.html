@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tohid Khan | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ===== GLOBAL ===== */
+body {
+  background: #000;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #8B0000;
+}
+.nav-link:hover {
+  color: #FF1E1E !important;
+}
+
+/* ===== SECTION COMMON ===== */
+.section {
+  padding: 100px 0;
+  transition: 0.4s;
+}
+.section:hover {
+  background: rgba(255, 30, 30, 0.05);
+}
+.section-title {
+  text-align: center;
+  color: #FF1E1E;
+  margin-bottom: 40px;
+}
+.red {
+  color: #FF1E1E;
+}
+
+/* ===== HOME ===== */
+.profile-img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 4px solid #8B0000;
+  transition: 0.5s;
+}
+.btnp
+{
+  background: red;
+  color: white;
+}
+.profile-img:hover {
+  transform: scale(1.1);
+  border-color: #FF1E1E;
+}
+
+/* ===== CARDS ===== */
+.custom-card {
+  background: #111;
+  border: 2px solid #8B0000;
+  padding: 20px;
+  transition: 0.4s;
+  height: 100%;
+}
+.custom-card:hover {
+  transform: translateY(-10px);
+  border-color: #FF1E1E;
+  box-shadow: 0 0 20px #FF1E1E;
+}
+
+/* ===== BUTTON ===== */
+.btn-custom {
+  background: #8B0000;
+  color: white;
+}
+.btn-custom:hover {
+  background: #FF1E1E;
+  box-shadow: 0 0 15px #FF1E1E;
+}
+
+/* ===== FORM ===== */
+.form-control {
+  background: #111;
+  color: white;
+  border: 1px solid #8B0000;
+}
+.form-control:focus {
+  border-color: #FF1E1E;
+  box-shadow: none;
+}
+
+/* ===== CONTACT ICONS ===== */
+.social-icons a {
+  font-size: 26px;
+  color: white;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #FF1E1E;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #8B0000;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">
+      <span class="text-danger">M</span>yProfile
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#hobbies">Hobbies</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript">
+  $('.js-scroll-trigger').click(function () {
+    $('.navbar-collapse').collapse('hide');
+    // body...
+  });
+</script>
+
+<!-- ===== HOME ===== -->
+<section id="home" class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <h1>Hello, I'm <span class="red">Tohid Khan</span></h1>
+        <p>Frontend Web Developer (HTML, CSS, Bootstrap)</p>
+        <a href="C:\Users\hp\Desktop\P.MAKE\photos\resume.pdf" target="_blank"><button class="btn btnp">RESUME</button></a>
+      </div>
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="C:\Users\hp\Desktop\P.MAKE\photos\MY 2.jfif" class="profile-img" alt="Profile">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="container">
+    <h1 class="section-title">A<span class="text-white fs-4">bout Me</span></h1>
+    <p class="text-center">
+       Hi! My name is <span class="fw-bold fs-4">Tohid Khan</span>, and I am currently pursuing Bachelor of Computer Applications (BCA) in my 1st year. I am a beginner in the field of computer science, and I am passionate about learning new technologies, improving my skills, and building creative projects.
+       I enjoy exploring areas like web development, programming, and problem-solving, and I am always excited to learn something new. My goal is to become a skilled developer and create meaningful digital experiences.
+       I believe in continuous learning, hard work, and dedication. With every project I build, I try to grow, experiment, and understand technology better
+    </p>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="section">
+  <div class="container">
+    <h1 class="section-title">E<span class="text-white fs-4">ducation</span></h1>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="custom-card">
+          <img src="C:\Users\hp\Desktop\P.MAKE\photos\saint.jfif" class="card-img-top">
+          <h5 class="text-center mt-2">Secondary Education</h5>
+          <p class="text-center mt-2">Saint Dadu Dayal School, Ajmer<br>2023</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card">
+          <img src="C:\Users\hp\Desktop\P.MAKE\photos\iamge14.jfif" class="card-img-top">
+          <h5 class="text-center mt-2">Senior Education</h5>
+          <p class="text-center mt-2">TSN School, Lohagal<br>2025</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card">
+          <img src="C:\Users\hp\Desktop\P.MAKE\photos\image15.jfif" class="card-img-top">
+          <h5 class="text-center mt-2">Graduation</h5>
+          <p class="text-center mt-2">BCA – Star Infotech College</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section">
+  <div class="container">
+    <h1 class="section-title">S<span class="text-white fs-4">kills</span></h1>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="custom-card">
+          <i class="fa-brands fa-html5 fs-1"></i>
+          <h5 class="mt-3">HTML</h5>
+           <p class="text-light">HTML is the foundation of web development.i focus on writting clean and semantic HTML to build well organized and accessible web page</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card">
+          <i class="fa-solid fa-c fs-1"></i>
+          <h5 class="mt-3">C Language</h5>
+           <p class="text-light">C is the powerfull and structured programming language. I used c to build core programming concept such is variable loop,functionm,arrey structure.  </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card">
+          <i class="fa-brands fa-bootstrap fs-1"></i>
+          <h5 class="mt-3">Bootstrap</h5>
+           <p  class="text-light"> Bootstrap is a popular front-end framework used to built responsive and mobile first website.Bootstrap help me design responsive website easily </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOBBIES ===== -->
+<section id="hobbies" class="section">
+  <div class="container">
+     <h1 class="section-title">H<span style="color:white; font-size:25px;margin-top: 23px;">obbies</span></h1>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <img src="C:\Users\hp\Desktop\P.MAKE\photos\my78.jfif">
+          <h5 class="text-center text-light mt-2">Photography</h5>
+          <p class="text-light text-center mt-2">Photography is my creative hobby that allows me to capture special moment. photography help me improve my creativity and attention to detail  </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <img src="C:\Users\hp\Desktop\P.MAKE\photos\trav.2.jfif">
+          <h5 class="text-center text-light  mt-2">Traveling</h5>
+          <p class="text-light text-center mt-2">Traveling allows me to explore new places,culture and lifestyle.I enjoy discovering new destination, meeting  people</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <img src="C:\Users\hp\Desktop\P.MAKE\photos\game.jpeg">
+          <h5 class="text-center text-light mt-2">Games</h5>
+          <p class="text-light text-center mt-2">Gaming is my one of faviorate hobby. It help me relax and i mprove skill like strategy and quick decision making. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="container">
+    <h1 class="section-title">C<span class="text-white fs-4">ontact</span></h1>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <input class="form-control mb-3" placeholder="Name">
+        <input class="form-control mb-3" placeholder="Email">
+        <textarea class="form-control mb-3" placeholder="Message"></textarea>
+        <button class="btn btn-custom w-100">Send</button>
+      </div>
+      <div class="col-md-6">
+        <p><b>Location:</b> Ajmer, Rajasthan</p>
+        <p><b>Email:</b> tohidkhan1002@gmail.com</p>
+        <p><b>Phone:</b> +91 7877723286</p>
+
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 | Developed by <b>Tohid Khan</b>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
